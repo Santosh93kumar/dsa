@@ -86,9 +86,47 @@ console.log(isEqualArray(a,b));
 
 
 //sort an array
-//in descending
+//in ascending 
 console.log(arr.sort());
-//in ascending
+//in descending
 console.log(arr.sort((a,b)=> b-a))
 
 
+
+
+const newArray=[1,2,3,4,5,6,7,8];
+const map = newArray.map((value, index)=> value*value)
+console.log('map : ', map);
+
+const filter = newArray.filter((value, index)=> value>5);
+console.log('filter : ', filter)
+
+const forEch = newArray.forEach((value, index, arr)=> {
+    arr[index]=value+1
+    console.log(arr[index])
+})
+console.log('forEach : ', newArray);
+
+// find the greatest one
+const reduce = newArray.reduce((acc, cur)=> {
+    if(acc> cur){
+        return acc
+    }
+    else{
+        return cur
+    }}
+)
+
+console.log(reduce)
+
+// sum of an Array
+
+const sumofArray= newArray.reduce((acc,cur)=>{
+    return acc+cur
+})
+console.log(sumofArray)
+
+
+// what is the difference bet filter and find
+// filter return all the element following the condition
+// find return the first elemnt satify the condition
