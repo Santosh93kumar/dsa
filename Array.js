@@ -57,16 +57,38 @@ console.log(arr)
 // splice is used to read , update and delete an array from an specific element , return a new array
 // slice is use to take from element from the array, doesn't chnage the original array;
 
-console.log(arr.slice(0,2));
+// console.log(arr.slice(0,2));
 
 // array shallow vs deep copy
-var newAray= arr;
-console.log('shallow Array :',newAray.splice(1,1), arr);
+// var newAray= arr;
+// console.log('shallow Array :',newAray.splice(1,1), arr);
 
 
-const deepArray= [...arr];
-var deepCopy = Array.from(arr);
-console.log(deepCopy);
+// const deepArray= [...arr];
+// var deepCopy = Array.from(arr);
+// console.log(deepCopy);
 
+
+// check if 2 array are equal;
+
+
+var isEqualArray =(arr1, arr2)=>{
+    if (arr1.length !== arr2.length) return false;
+    for(let i=0; i<arr.length;i++){
+        if(arr1[i]!== arr2[i]) return false
+    } 
+
+    return true
+}
+var a=[1,2,3];
+var b=[1,2,3]
+console.log(isEqualArray(a,b));
+
+
+//sort an array
+//in descending
+console.log(arr.sort());
+//in ascending
+console.log(arr.sort((a,b)=> b-a))
 
 
