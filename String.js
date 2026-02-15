@@ -23,5 +23,12 @@ let sentance = 'I am developer , am I not'
 console.log(sentance.replace("I am", "we are"));
 console.log(sentance.replaceAll("i", "we"));
 
+// difference in subString  slice
+//in slice we can inclue the - number
+console.log(sentance.substring(6,12));
+console.log(sentance.slice(6,12));
+console.log(sentance.slice(-10,-2))
+console.log(sentance)
 
-console.log()
+
+
