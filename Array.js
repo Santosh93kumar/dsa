@@ -1,4 +1,5 @@
 var arr=[1,2,3]
+console.log(arr.indexOf(3))
 arr.push(4)
 console.log(arr);
 

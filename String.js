@@ -66,6 +66,66 @@ console.log(JSON.parse(str))
 
 
 
+// string question
+let name= 'santossh'; subname='san';
+function findtheoccurence(name, subname){
+    if(name.includes(subname) == false){
+        return -1
+    }else{
+        return name.indexOf(subname)
+    } 
+    
+    
+}
+console.log(findtheoccurence(name, subname))
+
+// function findTheOccurrence(str, subStr) {
+//   if (subStr.length > str.length) return -1;
+
+//   for (let i = 0; i <= str.length - subStr.length; i++) {
+//     let found = true;
+
+//     for (let j = 0; j < subStr.length; j++) {
+//       if (str[i + j] !== subStr[j]) {
+//         found = false;
+//         break;
+//       }
+//     }
+
+//     if (found) return i;
+//   }
+
+//   return -1;
+// }
+
+// let name = "santossh";
+// let subname = "san";
+
+// console.log(findTheOccurrence(name, subname)); // 0
+
+
+// longest common prefix;
+var a='flower'; var b='flow';
+function longestCommonPrefix(a, b) {
+  let result = '';
+    console.log(a.length, b.length);
+    
+  let minLength = Math.min(a.length, b.length);
+
+  for (let i = 0; i < minLength; i++) {
+    if (a[i] === b[i]) {
+      result += a[i];
+    } else {
+      break;
+    }
+  }
+
+  return result;
+}
+
+console.log(longestCommonPrefix(a, b))
+
+
  
 
 
